@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add FoodItem</title>
+</head>
+<body>
+    <h1>Add FoodItem</h1>
+    
+    <hr>
+
+
+    <form>
+        
+        <table>
+
+            <th colspan="2">FoodItem Information</th>
+
+            <tr>
+                <td>
+                    <label for="fooditem-name">FoodItem Name :</label>
+                </td>
+                <td>
+                    <input type="text" id="fooditem-name" name="fooditem-name" required>
+                </td>
+            </tr>
+        
+             <tr>
+                <td>
+                    <label for="fooditem-description">FoodItem Description :</label>
+                </td>
+                <td>
+                    <textarea id="fooditem-description" name="fooditem-description" rows="6" cols="30"></textarea>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <label for="available">Available?</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="available" name="available" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="vegeterian">Vegeterian?</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="vegeterian" name="vegeterian" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="category">Category :</label>
+                </td>
+                <td>
+                    <select id="category" name="category" required>
+                        <option value="pasta" selected>Pasta</option>
+                        <option value="pizza">Pizza</option>
+                        <option value="sandwich">Sandwich</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="cuisine">Cuisine :</label>
+                </td>
+                <td>
+                    <select id="cuisine" name="cuisine" required>
+                        <option value="ITA" selected>Italian</option>
+                        <option value="ASN">Asian</option>
+                        <option value="CHN">Chinese</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+
+                    <label for="image-url">Image URL :</label>
+                </td>
+                <td>
+                    <input type="text" id="image-url" name="image-url" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                     <input type="reset" value="Discard">
+                </td>
+                <td>
+                    <input type="submit" value="Save">
+                </td>
+            </tr>
+
+        </table>
+    </form>
+</body>
+</html>
