@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            /*attribute selectors*/
+            [href] {
+                color: olive;
+            }
+            /*combining attribute and type selectors*/
+            a[href] {
+                text-decoration: none;
+            }
+            /*attribute selectors with specific value*/
+            a[href="https://www.google.com"] {
+                font-size: 1.2em;
+            }
+            /*attribute selectors with partial value*/
+            a[target="_blank"] {
+                color: purple;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="https://www.google.com">Google Search Page</a>
+        <a href="https://www.google.com" target="_blank">Google Search Page</a>
+
+        <span> Span 1 </span>
+            <a href="https://www.facebook.com">Facebook</a>
+        <span>Span 2</span>
+    </body>
+</html>

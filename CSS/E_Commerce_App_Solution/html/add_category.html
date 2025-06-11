@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Category</title>
+    <link rel="stylesheet" href="../css/form.css">
+</head>
+
+<body>
+    <header class="header"></header>
+    <main class="main">
+        <section class="form-section">
+            <h1>Add Category</h1>
+            <hr>
+            
+            <form action="">
+                <div class="form-group">
+                    <label for="category">Category Name:</label>
+                    <input type="text" name="category" id="category" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="desc">Category Description:</label>
+                    <textarea name="desc" class="vertical-resize" id="desc" cols="30" rows="5"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="products">Products Tagged:</label>
+                    <ul id="productlist">
+                    </ul>
+                </div>
+
+                <div class="form-group form-checkbox">
+                    <label for="is_available">Is Active</label>
+                    <input type="checkbox" name="is_available" id="is_available">
+                </div>
+
+                <div class="form-actions">
+                    <button type="reset" class="btn btn-secondary">Discard</button>
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="footer"></footer>
+</body>
+
+</html>

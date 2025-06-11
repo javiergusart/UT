@@ -1,0 +1,80 @@
+/* box-sizing: 
+    By default, when you set width and height for an element, it only applies to the content area. 
+    Padding and borders are added on top of this, increasing the total size of the element.
+
+    With box-sizing: border-box;, the total width and height include padding and borders.
+    This makes it easier to calculate the size of the element.
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+/* General Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f5f2;
+    color: #444;
+}
+
+/* Grid Container */
+.cards-grid {
+    width: 90%;
+    max-width: 800px;
+    min-width: 280px;
+    margin: auto;
+    /* margin with auto 
+        used to center elements horizontally within their parent container. 
+        It works only when the element has a defined width. 
+    */
+}
+
+/* Admin Page Title */
+h1 {
+    text-align: center;
+    background-color: #d9c2a3; /* Warm beige */
+    padding: 15px;
+    border-radius: 8px;
+    color: #3a2d2d;
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Card Styles */
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    margin: 15px auto;
+    max-width: 100%;
+    min-width: 250px;
+}
+
+/* Card Titles */
+.card-title {
+    color: #6d4c41; /* Warm brown */
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+/* Links */
+.card-body a {
+    display: block; /* Makes the link fill the entire width of the card */
+    text-decoration: none;  /* Removes underline */
+    color: white;
+    background-color: #a67c52; /* Muted brown */
+    padding: 12px;
+    border-radius: 6px;
+    margin: 8px 0;
+    font-size: 16px;
+    margin-left: auto;  /* Aligns the link to the right */
+    margin-right: auto; /* Aligns the link to the left */
+    text-align: center;
+}
+
+/* Hover Effect */
+.card-body a:hover {
+    background-color: #8b5e3c; /* Darker brown */
+}
