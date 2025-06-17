@@ -1,29 +1,48 @@
+/* index.css */
+
+/* General body styling */
 body {
     font-family: 'Times New Roman', serif;
     margin: 0;
     padding: 0;
-    background-color: white;
+    background-color: #fff8f4;
     color: #333;
 }
 
+/* Main container */
 .main {
     padding: 2rem;
     max-width: 1200px;
     margin: 0 auto;
 }
 
+/* Dashboard Title */
 h1 {
     text-align: center;
     margin-bottom: 2.5rem;
     color: #444;
 }
 
+/* Responsive grid layout */
 .cards-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
 }
 
+@media (min-width: 768px) {
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .cards-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Card styling */
 .card {
     background: white;
     border-radius: 10px;
@@ -39,6 +58,7 @@ h1 {
     transform: scale(1.02);
 }
 
+/* Card heading */
 .card-title {
     font-size: 1.4rem;
     margin-bottom: 1rem;
@@ -46,12 +66,14 @@ h1 {
     text-align: center;
 }
 
+/* Card body link container */
 .card-body {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
+/* Link buttons */
 .card-body a {
     text-align: center;
     background-color: #ff4d0d;
