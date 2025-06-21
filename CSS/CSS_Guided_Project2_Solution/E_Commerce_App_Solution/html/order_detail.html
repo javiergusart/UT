@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Details</title>
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/layout.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">
+            <img src="../images/Logo.webp" alt="E-Commerce Logo">
+            <span>We-Ship</span>
+        </div>
+        <div class="auth-buttons">
+            <button class="signin">Sign In</button>
+            <button class="signout">Sign Out</button>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="form-section">
+            <h1>Order Details</h1>
+            <form class="order-details" disabled>
+                <div class="form-group">
+                    <label for="orderNo">Order No.:</label>
+                    <input type="number" id="orderNo" value="10001" readonly>
+                </div>
+
+                <div class="form-group">
+                    <label for="orderDate">Order Date:</label>
+                    <input type="date" id="orderDate" value="2022-12-22" readonly>
+                </div>
+
+                <div class="form-group">
+                    <label for="customerName">Customer Name:</label>
+                    <input type="text" id="customerName" value="Alina Thomas" readonly>
+                </div>
+
+                <div class="form-group">
+                    <label for="orderPrice">Order Price:</label>
+                    <input type="text" id="orderPrice" value="600 USD" readonly>
+                </div>
+
+                <div class="form-group">
+                    <label for="paymentStatus">Payment Status:</label>
+                    <input type="text" id="paymentStatus" value="Paid" readonly>
+                </div>
+
+                <div class="form-group">
+                    <label for="orderStage">Order Stage:</label>
+                    <input type="text" id="orderStage" value="Processing" readonly>
+                </div>
+            </form>
+        </section>
+    </main>
+    
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-section about">
+            <h3>About Us</h3>
+            <p>We-Eat is your go-to platform for ordering delicious meals from top restaurants.</p>
+        </div>
+        <div class="footer-section links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Orders</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-section contact">
+            <h3>Contact Us</h3>
+            <p>Email: dummy@we-eat.com</p>
+            <p>Phone: +123 456 7890</p>
+            <p>Address: 1-1 The Center street, First Print State, Mars</p>
+        </div>
+        <div class="footer-section social">
+            <h3>Follow Us</h3>
+            <p>Stay connected on social media.</p>
+            <div class="social-icons">
+                <a href="#">Facebook</a> |
+                <a href="#">Instagram</a> |
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

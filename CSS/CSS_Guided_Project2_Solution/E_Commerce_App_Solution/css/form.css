@@ -2,10 +2,6 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: #f7f5f2;
-}
-
 .form-section {
     max-width: 600px;
     margin: 2rem auto;
@@ -16,7 +12,11 @@ body {
     margin-bottom: 1rem;
     border: none;
     padding: 0;
-    font-size: larger;
+}
+
+.form-group {
+    display: block;
+    font-weight: 500;
 }
 
 .form-group input,
