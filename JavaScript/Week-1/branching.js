@@ -1,3 +1,5 @@
+'use strict';
+
 var priceOfPhone = 42000, bankBalance = 20000, creditLimit = 40000;
 
 if (priceOfPhone < bankBalance) {
@@ -11,3 +13,19 @@ if (priceOfPhone < bankBalance) {
 console.log("transaction over.");
 
 
+var chocolate = "Toblerone", quantity;
+switch(chocolate) {
+    case "Dairy Milk":
+        quantity = 5;
+        break;
+    case "Hersheys":
+        quantity = 50;
+        break;
+    case "Toblerone":
+        quantity = 1;
+        break;
+    default: 
+        quantity = 2;
+}
+
+console.log(quantity)
