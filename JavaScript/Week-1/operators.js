@@ -32,6 +32,17 @@ console.log(1 === "1"); // type safe equality operator
 
 
 // logical operators
+var isRaining = true, goingByWalk = true, goingByCar = false;
+var takeUmbrealla = isRaining && goingByWalk;
+console.log(takeUmbrealla);
+
+var priceOfPhone = 42000, bankBalance = 20000, friendBankbalance = 80000, amIInterested = true;
+var willIBuyPhone = priceOfPhone < bankBalance && amIInterested;
+console.log(willIBuyPhone);
+
+console.log(priceOfPhone < bankBalance || priceOfPhone < friendBankbalance);
+
+console.log(!isRaining)
 
 
 
@@ -40,3 +51,14 @@ var name = "John", message = "Good morning";
 console.log(message + " " + name);
 
 console.log(0.1/0.2);
+
+
+console.log(typeof isRaining); //type off is misc.
+
+var city = "Bangalore";
+var isTrafficHuge = city === "Bangalore" ? "Yes" : "No";
+console.log(isTrafficHuge);
+
+console.log(1+2+3*4);
+
+console.log(1+(2+3)*4);
