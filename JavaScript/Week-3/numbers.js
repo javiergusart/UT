@@ -1,0 +1,2 @@
+Number.parseInt;
+Number.parseFloat;
