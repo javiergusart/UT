@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title id="title">DOM Manipulation Examples</title>
+    <style>
+      .highlight {
+        color: red;
+      }
+      .visible {
+        display: block;
+      }
+      .hidden {
+        display: none;
+      }
+      .active {
+        background-color: lightgreen;
+      }
+      #main {
+        border: 1px solid black;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <div id="child">Child Div</div>
+      <div>Sibling Div</div>
+    </div>
+
+    <div id="myDiv" class="highlight">Original Content</div>
+    <ul>
+      <li>Item 1</li>
+      <li class="highlight">Item 2</li>
+      <li>Item 3</li>
+    </ul>
+
+    <img
+      id="myImage"
+      src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Mauritius_kestrel_%28Falco_punctatus%29.jpg"
+      alt="Today's image"
+      width="100"
+    />
+    <br />
+
+    <br />
+
+    <input
+      type="text"
+      id="usezrname"
+      class="input-class"
+      placeholder="Enter username"
+    />
+
+    <form id="loginForm">
+      <input type="submit" value="Login" />
+    </form>
+
+    <button id="btn">Click Me</button>
+    <button id="clickMe">Click Event</button>
+    <button id="myBtn">This Button</button>
+
+    <div id="div1" style="padding: 20px; background: #eee">
+      Div 1
+      <div id="div2" style="padding: 20px; background: #ccc">
+        Div 2
+        <div id="div3" style="padding: 20px; background: #aaa">Div 3</div>
+      </div>
+    </div>
+
+    <!-- <script src="2_DOM_Structure_Enhanced.js"></script>
+  <script src="4_DOM_Manipulation1_Enhanced.js"></script>
+  <script src="5_DOM_Manipulation2_Enhanced.js"></script>
+  <script src="6_DOM_Events_Enhanced.js"></script> -->
+  </body>
+</html>
