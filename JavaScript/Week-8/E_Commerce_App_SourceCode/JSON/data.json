@@ -1,0 +1,130 @@
+{
+  "products": [
+    {
+      "name": "Foldsack Backpack",
+      "price": 109.95,
+      "quantity": 10,
+      "description": "Everyday bag with padded sleeved for Laptop",
+      "isAvailable": "Yes",
+      "category": "Bags",
+      "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+      "id": "1c66"
+    },
+    {
+      "name": "Mens Casual Premium Slim Fit T-Shirts",
+      "price": 22.3,
+      "quantity": 20,
+      "description": "men's clothing",
+      "isAvailable": "Yes",
+      "category": "Clothing",
+      "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+      "id": "83d5"
+    },
+    {
+      "name": "Silver Dragon Bracelet",
+      "price": 695,
+      "quantity": 30,
+      "description": "Ocean pearl bracelet.",
+      "isAvailable": "Yes",
+      "category": "Others",
+      "image": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
+      "id": "c654"
+    },
+    {
+      "name": "Silver Dragon Bracelet",
+      "price": 695,
+      "quantity": 30,
+      "description": "Ocean pearl bracelet.",
+      "isAvailable": "Yes",
+      "category": "Others",
+      "image": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
+      "id": "af3b"
+    },
+    {
+      "name": "Silver Dragon Bracelet",
+      "price": 695,
+      "quantity": 30,
+      "description": "Ocean pearl bracelet.",
+      "isAvailable": "Yes",
+      "category": "Others",
+      "image": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
+      "id": "8e0a"
+    }
+  ],
+  "categories": [
+    {
+      "name": "Men's Clothing",
+      "description": "All Clothing for men",
+      "isActive": true,
+      "id": "19d4"
+    },
+    {
+      "name": "Bags",
+      "description": "Backpacks, Luggage, Handbags",
+      "isActive": true,
+      "id": "ae90"
+    },
+    {
+      "name": "Jewellery",
+      "description": "Gold, Diamond & Imitation Jewellery",
+      "isActive": true,
+      "id": "349f"
+    },
+    {
+      "name": "Electronics",
+      "description": "All Electronic Appliances",
+      "isActive": true,
+      "id": "33e3"
+    }
+  ],
+  "orders": [
+    {
+      "date": "Dec 21, 2022 12:04 (ET)",
+      "name": "Alina Thomas",
+      "price": 600,
+      "paymentStatus": "Paid",
+      "orderStatus": "Processing",
+      "id": "6789"
+    },
+    {
+      "date": "Dec 21, 2022 16:04 (ET)",
+      "name": "Max Jackson",
+      "price": 120,
+      "paymentStatus": "Paid",
+      "orderStatus": "Delivered",
+      "id": "aeb6"
+    },
+    {
+      "date": "Dec 22, 2022 2:04 (ET)",
+      "name": "John Perry",
+      "price": 560,
+      "paymentStatus": "Paid",
+      "orderStatus": "In Shipment",
+      "id": "b8f0"
+    },
+    {
+      "date": "Dec 23, 2022 4:10 (ET)",
+      "name": "Reena Perry",
+      "price": 80,
+      "paymentStatus": "Cash On Delivery",
+      "orderStatus": "In Shipment",
+      "id": "3c26"
+    },
+    {
+      "date": "Dec 23, 2022 12:25 (ET)",
+      "name": "Robert Marley",
+      "price": 115,
+      "paymentStatus": "Paid",
+      "orderStatus": "Delivered",
+      "id": "0949"
+    },
+    {
+      "date": "Dec 23, 2022 12:44 (ET)",
+      "name": "Jack Anderson",
+      "price": 53,
+      "paymentStatus": "Paid",
+      "orderStatus": "Processing",
+      "id": "9f7a"
+    }
+  ]
+}
