@@ -12,58 +12,79 @@ import { useNavigate } from "react-router";
 
 const HomePage = () => {
   const dispatch = useDispatch();
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const [restaurantsList, setRestaurantsList] = useState();
   const [categoriesList, setCategoriesList] = useState();
+  const [cuisinesList, setCuisinesList] = useState();
 
   const listOfRestaurants = useSelector((state) => state.restaurantList);
   const listOfCategories = useSelector((state) => state.categoryList);
-  
-  const { loadingRestaurants, successRestaurants, errorRestaurants, restaurants } = listOfRestaurants;
-  const { loadingCategories, successCategories, errorCategories, categories } = listOfCategories;
- 
+  const listOfCuisines = useSelector((state) => state.cuisineList);
+
+  const { loadingRestaurants, errorRestaurants, restaurants } =
+    listOfRestaurants;
+  const { loadingCategories, errorCategories, categories } = listOfCategories;
+  const {
+    loading: loadingCuisines,
+    error: errorCuisines,
+    cuisines,
+  } = listOfCuisines;
 
   const userLogin = useSelector((state) => state.login);
   const { userInfo } = userLogin;
+
   useEffect(() => {
     if (userInfo) {
       navigate("/");
       dispatch(listRestaurants());
       dispatch(listCategories());
-      
+      dispatch(listCuisines());
     } else {
       navigate("/login");
     }
-  },[])
-
+  }, [dispatch, navigate, userInfo]);
 
   useEffect(() => {
-
     if (restaurants && restaurants.length > 0) {
-      console.log(restaurants);
       setRestaurantsList(restaurants);
     }
     if (categories && categories.length > 0) {
-      console.log(categories);
       setCategoriesList(categories);
     }
-    
-  });
+    if (cuisines && cuisines.length > 0) {
+      setCuisinesList(cuisines);
+    }
+  }, [restaurants, categories, cuisines]);
 
   return (
     <>
-      {loadingRestaurants && <Spinner animation="grow" />}
-      {loadingCategories && <Spinner animation="grow" />}
-      {restaurantsList && restaurantsList.length === 0 && (
-        <AlertMessage variant="info" message="No restaurants to display" />
+      {(loadingRestaurants || loadingCategories || loadingCuisines) && (
+        <Spinner animation="grow" />
       )}
+
+      {cuisinesList && cuisinesList.length === 0 && (
+        <AlertMessage variant="info" message="No cuisines to display" />
+      )}
+      {cuisinesList && (
+        <div className="container-fluid">
+          <h4>Try New Cuisines</h4>
+          <Row className="g-4">
+            {cuisinesList.map((cuisine) => (
+              <Col key={cuisine.id} md={6} sm={12} lg={3}>
+                <ItemCard item={cuisine} itemName="cuisine" />
+              </Col>
+            ))}
+          </Row>
+        </div>
+      )}
+
       {categoriesList && categoriesList.length === 0 && (
         <AlertMessage variant="info" message="No categories to display" />
       )}
       {categoriesList && (
         <div className="container-fluid">
-          <h4>Get inspiration for your order</h4>
+          <h4>Browse By Category</h4>
           <Row className="g-4">
             {categoriesList.map((category) => (
               <Col key={category.id} md={6} sm={12} lg={3}>
@@ -73,9 +94,13 @@ const HomePage = () => {
           </Row>
         </div>
       )}
+
+      {restaurantsList && restaurantsList.length === 0 && (
+        <AlertMessage variant="info" message="No restaurants to display" />
+      )}
       {restaurantsList && (
         <div className="container-fluid">
-          <h4>Available restaurants</h4>
+          <h4>Popular Restaurants</h4>
           <Row className="g-4">
             {restaurantsList.map((restaurant) => (
               <Col key={restaurant._id} md={6} sm={12} lg={4}>
@@ -84,6 +109,13 @@ const HomePage = () => {
             ))}
           </Row>
         </div>
+      )}
+
+      {(errorCuisines || errorCategories || errorRestaurants) && (
+        <AlertMessage
+          variant="danger"
+          message={errorCuisines || errorCategories || errorRestaurants}
+        />
       )}
     </>
   );
