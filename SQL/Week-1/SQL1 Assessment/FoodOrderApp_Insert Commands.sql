@@ -34,7 +34,9 @@ VALUES
   (14, 'Noodles', 'Slurp-worthy bowls of steaming noodles, tossed in savory sauces and loaded with fresh ingredients.', 'https://cdn.pixabay.com/photo/2020/02/15/20/38/noodles-4851996_1280.jpg', 1),
   (15, 'Chicken', 'Tender and juicy chicken dishes prepared in a variety of styles, from crispy fried to succulent grilled options.', 'https://www.themealdb.com/images/media/meals/hglsbl1614346998.jpg', 1);
 
-  /* Q. 1. Insert following records in cuisine table -
+/* Q. 1. Insert following records in cuisine table */
+INSERT INTO `cuisine` (`id`, `name`, `description`, `image`, `isActive`)
+VALUES
   (1, 'Italian', 'Mouthwatering slices of cheesy goodness, baked to perfection.', 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Collage_cucina_italiana.jpg/300px-Collage_cucina_italiana.jpg', 1),
   (2, 'Indian', 'Discover the diverse and vibrant flavors of India, from aromatic curries to sizzling tandoori dishes and mouthwatering biryanis.', 'https://cdn.pixabay.com/photo/2018/12/04/16/49/indian-food-3856050_1280.jpg', 1),
   (3, 'Chinese', 'Embark on a culinary journey through China with savory stir-fries, delectable dumplings, and aromatic fried rice.', 'https://cdn.pixabay.com/photo/2016/02/22/17/05/food-1216048_1280.jpg', 1),
@@ -45,9 +47,10 @@ VALUES
   (8, 'French', 'Indulge in the elegance of French cuisine with delicate pastries, rich sauces, and gourmet classics like Coq au Vin and Ratatouille.', 'https://cdn.pixabay.com/photo/2016/11/22/19/31/macarons-1850216_1280.jpg', 1),
   (9, 'Greek', 'Indulge in the simple yet delicious flavors of Greece, from tangy tzatziki and tender souvlaki to crispy spanakopita and sweet baklava.', 'https://cdn.pixabay.com/photo/2021/01/10/04/37/salad-5904093_1280.jpg', 1),
   (10, 'Turkish', 'Delight in the rich and aromatic flavors of Turkish cuisine, from succulent kebabs and flavorful mezes to mouthwatering baklava and traditional Turkish tea.', 'https://cdn.pixabay.com/photo/2016/09/06/14/23/authentic-greek-1649223_1280.jpg', 1);
-  */ 
  
-  /*Q. 2. Insert following records in restaurant table -
+/* Q. 2. Insert following records in restaurant table */
+INSERT INTO `restaurant` (`id`, `name`, `address`, `contact`, `image`, `isActive`)
+VALUES
   (1, 'Flavor Fusion', '123 Main Street, New York, NY 10001', 12583690, 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cmVzdGF1cmFudHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60', 1),
   (2, 'Tasty Haven', '456 Elm Avenue, Los Angeles, CA 90001', 4836383, 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVzdGF1cmFudHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60', 1),
   (3, 'Gourmet Junction', '789 Oak Street, Chicago, IL 60601', 173734, 'https://images.unsplash.com/photo-1537047902294-62a40c20a6ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cmVzdGF1cmFudHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60', 1),
@@ -58,9 +61,10 @@ VALUES
   (8, "Greenleaf Restaurant", "789 Broadway, Seattle, WA 98101", 828292, "https://images.pexels.com/photos/6126306/pexels-photo-6126306.jpeg?auto=compress&cs=tinysrgb&w=600", 1),
   (9, "Spice Junction", "234 Cherry Street, Atlanta, GA 30301", 228484, "https://cdn.pixabay.com/photo/2020/08/27/07/31/restaurant-5521372_1280.jpg", 1),
   (10, "The Food Town", "567 Elmwood Road, Denver, CO 80201", 9363344, "https://cdn.pixabay.com/photo/2016/11/21/16/02/outdoor-dining-1846137_1280.jpg", 1);
-  */
 
-/*Q. 3. Insert following records in fooditem table -
+/* Q. 3. Insert following records in fooditem table */
+INSERT INTO `fooditem` (`id`,`name`,`description`,`image`,`categoryId`,`cuisineId`,`isVeg`,`isActive`)
+VALUES
   (1, "Cabbage Roll", "Savory parcels of goodness, stuffed with a flavorful medley.", "https://www.themealdb.com/images/media/meals/q8sp3j1593349686.jpg", 10, 10, 1, 1),
   (2, "Grill Mac & Cheese Sandwich", "Indulgent fusion of cheesy comfort and crispy perfection.", "https://www.themealdb.com/images/media/meals/xutquv1505330523.jpg", 7, 7, 1, 1),
   (3, "New York Cheescake", "A slice of velvety bliss from the Big Apple's finest.", "https://www.themealdb.com/images/media/meals/swttys1511385853.jpg", 4, 7, 1, 1),
@@ -81,9 +85,10 @@ VALUES
   (18, "Salmon Sushi", "Sushi rice topped with smoked salmon.", "https://www.themealdb.com/images/media/meals/g046bb1663960946.jpg", 9, 4, 1, 1),
   (19, "Veg Pizza", "Mouthwatering pizza made of fresh veggies.", "https://images.unsplash.com/photo-1604917869287-3ae73c77e227?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dmVnJTIwcGl6emF8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60", 1, 1, 1, 1),
   (20, "Berry Icecream", "Made with plain greek yoghurt mixed with berries and vanilla cream.", "https://images.unsplash.com/photo-1627222295124-f8b3fc09e47f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGljZWNyZWFtfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60", 3, 9, 1, 1);
-   */
 
-/*Q. 4. Insert following records in menu table -
+/* Q. 4. Insert following records in menu table */
+INSERT INTO `menu` (`id`, `restaurantId`, `isActive`)
+VALUES
   (1, 1, 1),
   (2, 2, 1),
   (3, 3, 1),
@@ -94,9 +99,10 @@ VALUES
   (8, 8, 1),
   (9, 9, 1),
   (10, 10, 1);
-*/
 
-/*Q. 5. Insert following records in menu_items table -
+/* Q. 5. Insert following records in menu_items table */
+INSERT INTO `menu_items` (`id`, `menuId`, `fooditemId`, `fooditemPrice`, `isActive`)
+VALUES
   (1, 1, 1, 10, 1),
   (2, 1, 4, 15, 1),
   (3, 1, 8, 10, 1),
@@ -122,42 +128,65 @@ VALUES
   (23, 9, 18, 32, 1),
   (24, 9, 19, 30, 1),
   (25, 10, 10, 30, 1);
-*/  
 
-/*Q. 6. Insert following records in cart table -
+/* Q. 6. Insert following records in cart table */
+INSERT INTO `cart` (`id`, `userId`, `restaurantId`, `orderTotalPrice`, `isActive`)
+VALUES
   (1, 1, 3, 270, 1),
   (2, 2, 4, 140, 1),
   (3, 3, 7, 100, 1);
-*/
 
-/*Q. 7. Insert following records in cart_items table -
-  (1, 1, 4, 10, 4),
-  (2, 1, 5, 25, 4),
-  (3, 1, 13, 14, 5),
-  (4, 1, 20, 12, 5),
-  (6, 2, 2, 12, 5),
-  (7, 2, 9, 15, 2),
-  (8, 2, 10, 25, 2),
-  (9, 3, 19, 25, 4);
-*/
+/* Q. 7. Insert following records in cart_items table */
+INSERT INTO `cart_items` (`id`, `cartId`, `fooditemId`, `fooditemPrice`, `unitsInCart`, `isActive`)
+VALUES
+  (1, 1, 4, 10, 4, 1),
+  (2, 1, 5, 25, 4, 1),
+  (3, 1, 13, 14, 5, 1),
+  (4, 1, 20, 12, 5, 1),
+  (6, 2, 2, 12, 5, 1),
+  (7, 2, 9, 15, 2, 1),
+  (8, 2, 10, 25, 2, 1),
+  (9, 3, 19, 25, 4, 1);
 
-/*Q. 8. Insert following records in shippingDetails table -
-  (1, '123 Main St, Anytown USA', 'johndoe@example.com', 5551234),
-  (2, '456 Oak St, Anytown USA', 'janedoe@example.com', 5555678),
-  (3, '789 Elm St, Anytown USA', 'bob@example.com', 5559012);
-*/
+/* Q. 8. Insert following records in shippingdetails table */
+INSERT INTO `shippingdetails` (`id`, `shippingAddress`, `emailId`, `phoneNo`, `isActive`)
+VALUES
+  (1, '123 Main St, Anytown USA', 'johndoe@example.com', 5551234, 1),
+  (2, '456 Oak St, Anytown USA', 'janedoe@example.com', 5555678, 1),
+  (3, '789 Elm St, Anytown USA', 'bob@example.com', 5559012, 1);
 
-/*Q. 9. Insert following records in order table -
-(1, 1, 2, 160, 1, 'PROCESSING', 1, '2023-05-11 10:00:00', '2023-05-11 10:00:00'),
-(2, 2, 5, 70, 2, 'SHIPPED', 1, '2022-05-09 12:00:00', '2022-05-09 13:00:00'),
-(3, 3, 10, 90, 3, 'DELIVERED', 1, '2023-05-08 05:00:00', '2023-05-08 07:00:00');
-*/
+/* Q. 9. Insert following records in order table */
+INSERT INTO `order` (
+  `id`,
+  `userId`,
+  `restaurantId`,
+  `orderTotalPrice`,
+  `shippingDetailsId`,
+  `orderStatus`,
+  `isActive`,
+  `createdTs`,
+  `updatedTs`
+)
+VALUES
+  (1, 1, 2, 160, 1, 'PROCESSING', 1, '2023-05-11 10:00:00', '2023-05-11 10:00:00'),
+  (2, 2, 5, 70, 2, 'SHIPPED', 1, '2022-05-09 12:00:00', '2022-05-09 13:00:00'),
+  (3, 3, 10, 90, 3, 'DELIVERED', 1, '2023-05-08 05:00:00', '2023-05-08 07:00:00');
 
-/*Q. 10. Insert following records in order_items table - 
-(1, 1, 1, 12, 5, 1, '2023-05-11 10:00:00', '2023-05-11 10:00:00'),
-(2, 1, 3, 22, 1, 1, '2023-05-11 10:00:00', '2023-05-11 10:00:00'),
-(3, 1, 12, 24, 2, 1, '2023-05-11 10:00:00', '2023-05-11 10:00:00'),
-(4, 1, 15, 15, 2, 1, '2023-05-11 10:00:00', '2023-05-11 10:00:00'),
-(5, 2, 16, 35, 2, 1, '2023-05-09 12:00:00', '2023-05-09 12:00:00'),
-(6, 3, 10, 10, 3, 1, '2023-05-08 05:00:00', '2023-05-08 05:00:00');
-*/
+/* Q. 10. Insert following records in order_items table */
+INSERT INTO `order_items` (
+  `id`,
+  `orderId`,
+  `fooditemId`,
+  `fooditemPrice`,
+  `unitsPurchased`,
+  `isActive`,
+  `createdTs`,
+  `updatedTs`
+)
+VALUES
+  (1, 1, 1, 12, 5, 1, '2023-05-11 10:00:00', '2023-05-11 10:00:00'),
+  (2, 1, 3, 22, 1, 1, '2023-05-11 10:00:00', '2023-05-11 10:00:00'),
+  (3, 1, 12, 24, 2, 1, '2023-05-11 10:00:00', '2023-05-11 10:00:00'),
+  (4, 1, 15, 15, 2, 1, '2023-05-11 10:00:00', '2023-05-11 10:00:00'),
+  (5, 2, 16, 35, 2, 1, '2023-05-09 12:00:00', '2023-05-09 12:00:00'),
+  (6, 3, 10, 10, 3, 1, '2023-05-08 05:00:00', '2023-05-08 05:00:00');
